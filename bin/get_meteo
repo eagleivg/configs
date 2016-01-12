@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -f /tmp/MPRF.png
+#curl http://www.meteorad.ru/data/UVKProfsoyuz.png -o /tmp/MPRF.png
+curl http://www.meteorad.ru/data/UVKVnukovo.png -o /tmp/MPRF.png
+dconf write /org/mate/desktop/background/picture-filename "'/tmp/MPRF.png'"
